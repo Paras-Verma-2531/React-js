@@ -1,12 +1,12 @@
 import "./App.css";
-import Nav from './components/Nav'
-import Main from './components/Main'
+import Count from './components/Counter'
 // import Header from './components/Header'
 export default function App() {
   return (
     <div className="container">
-      <Nav/>
-      <Main/>
+      {/* <Nav/>
+      <Main/> */}
+      <Count/>
     </div>
   );
 };

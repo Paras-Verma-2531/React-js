@@ -1,15 +1,18 @@
 import "./App.css";
-import Count from './components/Counter'
+import Count from "./components/Counter";
+import Notes from "./components/Notes";
 // import Header from './components/Header'
 export default function App() {
   return (
-    <div className="container">
+    <>
       {/* <Nav/>
       <Main/> */}
-      <Count/>
-    </div>
+      {/* <Count/> */}
+      <Notes />
+      <footer>Made with ❤️ by Paras</footer>
+    </>
   );
-};
+}
 // here Page is a reatc reusable comp:
 // export default function App() {
 //   return (

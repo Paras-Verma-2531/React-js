@@ -6,7 +6,43 @@
   box-sizing: border-box;
   font-family: Inter;
 }
+/* for the Notes Project */
+.NotesContainer
+{
+  background-color: #E3F4F4;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  list-style: none;
+}
+.Text-Box
+{
+  background-color: #D2E9E9;
+  padding: 20px;
+  box-shadow: 3px 3px 1px #D8D8D8;
+  border-radius: 10px;
+  border: 2px solid #8294C4;
+  text-align: center;
+  margin-left: 5px;
+}
+.singleText
+{
+  font-family: Inter;
+  font-weight: 500;
+  color: black;
+}
+li{
+  height: fit-content;
+}
+footer
+{
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
 
+/* for the react site info project */
  .nav{
 display: flex;
 justify-content: center;

@@ -1,9 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Count from "./components/Counter";
-import Notes from "./components/Notes";
-import Child1 from "./components/Passing_Data_from_ch_par/Child1";
-// import Header from './components/Header'
+import UseEffectHook from "./Forms And Hooks/UseEffectHook";
 export default function App() {
   const[count,setCount]=useState(0);
   function updateCount(count)
@@ -17,9 +14,13 @@ export default function App() {
       {/* <Count/> */}
       {/* <Notes />
       <footer>Made with ❤️ by Paras</footer> */}
-      <p>Count in Parent :{count}</p>
-      {/* passing function as callback to child through which it can update value in parent */}
-      <Child1 updateCountInParent={updateCount}/>
+      {/* <p>Count in Parent :{count}</p> */}
+      {/* passing function as callback to child through which it can update value in parent
+      <Child1 updateCountInParent={updateCount}/> */}
+
+      {/* All about Hooks And User Input */}
+      {/* <UserForm/> */}
+      <UseEffectHook/>
     </>
   );
 }

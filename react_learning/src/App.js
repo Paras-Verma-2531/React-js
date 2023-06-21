@@ -1,12 +1,23 @@
 import { useState } from "react";
-import "./App.css";
+// import "./App.css";
+import "./Forms And Hooks/News.css"
 import UseEffectHook from "./Forms And Hooks/UseEffectHook";
+import jokesData from "./Youtube_Learning/jokesData";
+import Jokes from "./Youtube_Learning/Jokes";
+import NewsApp from "./Forms And Hooks/NewsApp";
 export default function App() {
-  const[count,setCount]=useState(0);
-  function updateCount(count)
-  {
-    setCount(count);
-  }
+  // const[count,setCount]=useState(0);
+  // function updateCount(count)
+  // {
+  //   setCount(count);
+  // }
+  // **********for the Joke component*************
+  const jokesElement=jokesData.map(joke=>
+    {
+      return <Jokes setup={joke.setup} punchline={joke.punchline}/>
+    }
+    )
+    const arr=[1,2,3,4];
   return (
     <>
       {/* <Nav/>
@@ -19,8 +30,11 @@ export default function App() {
       <Child1 updateCountInParent={updateCount}/> */}
 
       {/* All about Hooks And User Input */}
-      {/* <UserForm/> */}
-      <UseEffectHook/>
+      {/* <UserForm/> 
+      <UseEffectHook/>*/}
+      {/***********for the Joke component*************
+      {jokesElement*/}
+      <NewsApp/>
     </>
   );
 }

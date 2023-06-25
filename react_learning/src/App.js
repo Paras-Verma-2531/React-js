@@ -1,10 +1,17 @@
 import { useState } from "react";
-// import "./App.css";
+import "./App.css";
 import "./Forms And Hooks/News.css"
 import UseEffectHook from "./Forms And Hooks/UseEffectHook";
 import jokesData from "./Youtube_Learning/jokesData";
 import Jokes from "./Youtube_Learning/Jokes";
 import NewsApp from "./Forms And Hooks/NewsApp";
+import UsersApi from "./Youtube_Learning/UsersApi";
+import './Youtube_Learning/ProfileCard.css'
+import { Routes,Route } from "react-router-dom";
+import Pricing from "./Routing/Pages/Pricing";
+import About from './Routing/Pages/About'
+import NotFound from './Routing/Pages/NotFound'
+import Nav from "./components/Nav";
 export default function App() {
   // const[count,setCount]=useState(0);
   // function updateCount(count)
@@ -34,7 +41,17 @@ export default function App() {
       <UseEffectHook/>*/}
       {/***********for the Joke component*************
       {jokesElement*/}
-      <NewsApp/>
+      {/********************for the NewsApp React project********************/}
+      {/* <NewsApp/> */}
+      {/* **********************for the routing:::************************* */}
+       <Nav/>
+       <Routes>
+         <Route path="/pricing" element={<Pricing/>}/>
+         <Route path="/About" element={<About/>}/>
+         <Route path="*" element={<NotFound/>}/>
+       </Routes>
+      {/* ******************************** */}
+      {/* <UsersApi/> */}
     </>
   );
 }

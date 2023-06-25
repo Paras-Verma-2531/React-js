@@ -57,15 +57,7 @@ height: 90px;
   border-radius: 50%;
   margin-right: 7px;
 }
-.nav>h3{
- margin-right: auto;
- color: #61DAFB;
- font-size: 22px;
-}
-.nav>h4{
-  color: #DEEBF8;
-  font-weight: 600;
-}
+
 /* .nav-list
 {
   list-style: none;
